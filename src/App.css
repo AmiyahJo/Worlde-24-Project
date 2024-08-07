@@ -1,0 +1,106 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+h1{
+  font-size: 1.2em;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  margin: 0 0 30px 0;
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 5px;
+  margin-bottom: 10px;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.row span{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1f1e1e; 
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: #1f1e1e;
+  margin-right: 2px;
+}
+
+.tile.correct {
+  background-color: #6aaa64;
+  border-color: #6aaa64;
+  color: white;
+}
+
+.tile.present{
+  background-color: #c9b458;
+  border-color: #c9b458;
+  color: white;
+}
+
+.tile.absent{
+  background-color: #707070;
+  border-color: #707070;
+  color: white;
+}
+
+.keyboard{
+  margin-top: 20px;
+   display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+  justify-content: center; 
+}
+
+.keyboard button{
+  height: 30px;
+  margin: 3px; 
+  padding: 10;
+  border-radius: 2px; 
+  font-size: 18px;
+  border: 2px solid #717d8b;
+  font-weight: 600;
+  text-align: center;
+  color: #f2f2f2;
+  background-color: #717d8b;
+  cursor: pointer;
+}
+
+.hint {
+  margin-top: 20px;
+  color: #e5c638;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  
+}
+
